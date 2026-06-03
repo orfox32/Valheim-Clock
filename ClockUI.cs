@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -53,6 +53,9 @@ namespace ClockMod
             ClockText.lineSpacing = 0.9f;
             ClockText.text = "...";
 
+            ClockText.horizontalOverflow = HorizontalWrapMode.Overflow;
+            ClockText.verticalOverflow = VerticalWrapMode.Overflow;
+
             var averia = Resources.FindObjectsOfTypeAll<Font>().FirstOrDefault(f => f.name == "AveriaSerifLibre-Bold");
             if (averia != null) ClockText.font = averia;
 
@@ -97,8 +100,14 @@ namespace ClockMod
 
             var panelRect = Panel.GetComponent<RectTransform>();
             panelRect.anchoredPosition = new Vector2(ClockPlugin.ConfigPosX.Value, ClockPlugin.ConfigPosY.Value);
-            panelRect.sizeDelta = new Vector2(ClockPlugin.ConfigWidth.Value, ClockPlugin.ConfigHeight.Value);
 
+            float targetWidth = ClockPlugin.ConfigWidth.Value;
+            float targetHeight = ClockPlugin.ConfigHeight.Value;
+
+            if (ClockPlugin.ConfigUse12HourFormat.Value) targetWidth += 20f;
+            if (ClockPlugin.ConfigLayoutStyle.Value == TextLayoutStyle.Stacked) targetHeight += 20f;
+
+            panelRect.sizeDelta = new Vector2(targetWidth, targetHeight);
             ClockText.fontSize = ClockPlugin.ConfigFontSize.Value;
         }
     }
