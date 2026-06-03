@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help us improve the mod
+about: Create a report to help me improve the mod
 title: "[BUG]"
 labels: bug
 assignees: orfox32
