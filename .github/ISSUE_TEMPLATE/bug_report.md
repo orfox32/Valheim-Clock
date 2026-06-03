@@ -7,15 +7,6 @@ assignees: ''
 
 ---
 
----
-name: Bug report
-about: Create a report to help us improve the mod
-title: '[BUG] '
-labels: bug
-assignees: ''
-
----
-
 **Describe the bug**
 A clear and concise description of what the bug is.
 
@@ -33,14 +24,14 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem (highly recommended for UI layout overlaps).
 
 **Environment (please complete the following information):**
- - OS: [e.g. Windows 11, Linux]
- - Valheim Game Version: [e.g. 0.221.12]
- - BepInEx Version: [e.g. 5.4.2333]
- - Valheim Clock Version: [e.g. 1.3.1]
+- OS: [e.g. Windows 11, Linux]
+- Valheim Game Version: [e.g. 0.221.12]
+- BepInEx Version: [e.g. 5.4.2333]
+- Valheim Clock Version: [e.g. 1.3.2]
 
 **Mod Compatibility (please complete the following information):**
- - Are you using RandyKnapp's Minimal Status Effects? [Yes/No]
- - Are you using any other UI, HUD, or Minimap mods? [Please list them here]
+- Are you using RandyKnapp's Minimal Status Effects? [Yes/No]
+- Are you using any other UI, HUD, or Minimap mods? [Please list them here]
 
 **Additional context & Logs**
 Add any other context about the problem here. 
