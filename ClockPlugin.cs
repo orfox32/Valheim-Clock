@@ -23,8 +23,6 @@ namespace ClockMod
 
         public static ConfigEntry<float> ConfigPosX;
         public static ConfigEntry<float> ConfigPosY;
-        public static ConfigEntry<float> ConfigLargePosX;
-        public static ConfigEntry<float> ConfigLargePosY;
         public static ConfigEntry<float> ConfigWidth;
         public static ConfigEntry<float> ConfigHeight;
         public static ConfigEntry<int> ConfigFontSize;
@@ -37,8 +35,6 @@ namespace ClockMod
 
             ConfigPosX = Config.Bind("1. Position", "Offset X", 0f, "Horizontal offset relative to the bottom center of the minimap.");
             ConfigPosY = Config.Bind("1. Position", "Offset Y", -10f, "Vertical offset relative to the bottom center of the minimap.");
-            ConfigLargePosX = Config.Bind("1. Position", "Large Map Offset X", -20f, "Horizontal offset on the large map (Anchored Top Right).");
-            ConfigLargePosY = Config.Bind("1. Position", "Large Map Offset Y", -120f, "Vertical offset on the large map (Anchored Top Right).");
             ConfigWidth = Config.Bind("2. Visuals", "Panel Width", 160f, "Width of the clock panel.");
             ConfigHeight = Config.Bind("2. Visuals", "Panel Height", 34f, "Height of the clock panel.");
             ConfigFontSize = Config.Bind("2. Visuals", "Font Size", 18, "Size of the clock text.");
